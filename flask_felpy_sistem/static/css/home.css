@@ -1,0 +1,170 @@
+body{
+    background-color: rgb(0, 34, 128);
+    background: url(/static/fundo.jpg), no-repeat;
+    background-attachment: fixed;
+    display: block;
+}
+
+div#form_fundo{
+    backdrop-filter: blur(10px);
+    opacity: .7;
+    margin: 10% 25% 25% 25%;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 2px 5px 5px black;
+}
+div#form_fundo:hover{
+    backdrop-filter: blur(10px);
+    opacity: 100%;
+    margin: 10% 25% 25% 25%;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 2px 5px 5px black;
+}
+
+div#form_frente{
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 2px 5px 5px black;
+    padding: 30px;
+}
+
+label{
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 18px;
+    padding: 20px;
+    align-items: center;
+}
+
+input{
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+}
+
+.btn_sair{
+    background-color: rgb(255, 255, 255);
+    color: red;
+    width: 200px;
+    height: 200px;
+}
+.btn_sair:hover{
+    background-color: red;
+    color: white;
+    width: 220px;
+    height: 220px;
+}
+
+button{
+    width: 100%;
+    align-items: center;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 25px;
+    background-color: rgb(4, 4, 66);
+    color: white;
+    padding: 10px;
+}
+
+button:hover{
+    font-size: 26px;
+    color: white;
+    background-color: rgb(4, 4, 66);
+    cursor: pointer;
+}
+
+.btn_criar{
+    margin: 50px;
+    width: 100%;
+    align-items: center;
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 25px;
+    background-color: rgb(4, 4, 66);
+    color: white;
+    padding: 10px;
+}
+
+h1{
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.flash_alerta{
+    background-color: rgb(250, 0, 0);
+    color: white;
+    align-items: center;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#form_cadastro{
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    text-align: left;
+    align-items: center;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 2px 5px 5px black;
+    padding: 30px;
+}
+
+#form_frente_logado{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    text-align: center;
+    padding: 25px;
+    margin-left: 150px;
+}
+
+.btn_caixa{
+    width: 200px;
+    height: 200px;
+}
+.btn_caixa:hover{
+    background-color: rgb(57, 57, 255);
+    width: 220px;
+    height: 220px;
+}
+
+.btn_estoque{
+    width: 200px;
+    height: 200px;
+}
+.btn_estoque:hover{
+    background-color: rgb(57, 57, 255);
+    width: 220px;
+    height: 220px;
+}
+
+.btn_fechamento{
+    width: 200px;
+    height: 200px;
+}
+.btn_fechamento:hover{
+    background-color: rgb(57, 57, 255);
+    width: 220px;
+    height: 220px;
+}
+
+.btn_criar{
+    text-align: center;
+}

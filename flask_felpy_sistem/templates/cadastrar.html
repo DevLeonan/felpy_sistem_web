@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/css/home.css">
+</head>
+<body>
+    {% set mensagem = get_flashed_messages() %}
+    {% if mensagem %}
+        <div class="flash_alerta">
+            {{mensagem[0]}}
+        </div>
+    {% endif %}
+
+    <div id="form_fundo">
+        <h1> - Felpy_sistem [Cadastro] - </h1>
+        <div id="form_cadastro">
+            <form action="/cadastrar" id="cadastrar" method="post">
+                <label for="e-mail" id="_label_email">E-mail:</label>
+                <input type="email" name="email" id="email" required placeholder="Digite Seu E-mail..."><br><br>
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario" required placeholder="Digite Seu Usuário..."><br><br>
+                <label for="senha" id="label_senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required placeholder="Digite Sua Senha..."><br><br>
+                <label for="confirmar_senha" id="label_confirmar_senha">Confirmar Senha:</label>
+                <input type="password" name="confirmar_senha" id="confirmar_senha" required placeholder="Digite Novamente Sua Senha..."><br><br>
+                <button type="submit" id="btn_criar">CRIAR</button>
+                <button type="button" class="btn_voltar" onclick="location.href='/logout'">VOLTAR</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

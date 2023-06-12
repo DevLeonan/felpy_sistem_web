@@ -1,0 +1,33 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/css/home.css">
+</head>
+<body>
+
+    {% set mensagem = get_flashed_messages() %}
+    {% if mensagem %}
+        <div class="flash_alerta">
+            {{mensagem[0]}}
+        </div>
+    {% endif %}
+
+    <div id="form_fundo">
+        <h1> - Felpy_sistem - </h1>
+        <div id="form_frente">
+            <form action="/login" id="Login" method="post">
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario" required placeholder="Digite Seu Usuario..."><br><br>
+                <label for="senha" id="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required placeholder="Digite Sua Senha..."><br><br>
+                <button type="submit" id="btn_entrar">ENTRAR</button>
+            </form>
+            <button type="button" onclick="location.href='/cadastrar'">CADASTRAR</button>
+        </div>
+    </div>
+
+</body>
+</html>
